@@ -68,7 +68,6 @@ sys_dup(void)
 
 int readcount = 0;
 
-
 int
 sys_read(void)
 {
@@ -81,6 +80,12 @@ sys_read(void)
 
   readcount++;
   return fileread(f, p, n);
+}
+
+int
+sys_getreadcount(void)
+{
+  return readcount;
 }
 
 int
