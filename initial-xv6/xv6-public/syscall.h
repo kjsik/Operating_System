@@ -23,3 +23,5 @@
 #define SYS_setuid 22
 //addition part
 #define SYS_getreadcount 23
+#define SYS_settickets 24
+#define SYS_getpinfo 25
